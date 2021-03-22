@@ -22,7 +22,7 @@ def grm_subsetter(species, idlist, anti, gids):
     return grm
                 
 # iterate over antibiotics and species, calling 
-for i, anti in enumerate(['rifampicin']): # 'ciprofloxacin', 
+for i, anti in enumerate(['ciprofloxacin', 'rifampicin']): 
     for species in spclists[i]:
         # read in gids in analysis
         with open(f"gemma_final/{species}_{anti}_gids.txt", "r") as infile: # ADD FP_ FOR FP
